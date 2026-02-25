@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>전기이론 SNS - 패러데이 vs 렌츠</title>
+    <title>전기이론 SNS - Faraday vs Lenz</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
@@ -16,6 +16,7 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
+            padding: 20px 0;
         }
 
         .insta-card {
@@ -25,7 +26,7 @@
             border: 1px solid #dbdbdb;
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
         }
 
         .post-header {
@@ -76,7 +77,7 @@
             display: flex;
             align-items: center;
             gap: 4px;
-            text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            text-shadow: 0 4px 12px rgba(0,0,0,0.4);
         }
 
         .fraction {
@@ -89,7 +90,7 @@
 
         .fraction-line {
             width: 100%;
-            height: 2px;
+            height: 2.5px;
             background-color: white;
             margin: 2px 0;
         }
@@ -117,6 +118,7 @@
 
         .user-id { font-weight: 700; margin-right: 6px; color: #262626; }
         .tag { color: #00376b; font-size: 12px; font-weight: 500; }
+        .mention { color: #00376b; font-weight: 500; cursor: pointer; }
     </style>
 </head>
 <body>
@@ -128,15 +130,18 @@
             <div class="profile-inner">F</div>
         </div>
         <div>
-            <div class="text-sm font-bold leading-tight">Faraday_Official_1831</div>
+            <div class="text-sm font-bold leading-tight">faraday_ceo_1831</div>
             <div class="text-[10px] text-gray-500">Royal Institution, London</div>
+        </div>
+        <div class="ml-auto text-gray-400">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path></svg>
         </div>
     </div>
 
     <!-- Post Image -->
     <div class="post-image">
         <div class="formula-display">
-            e = <span class="text-red-500">-</span>N
+            e = <span class="text-red-500 animate-pulse">-</span>N
             <div class="fraction">
                 <span>ΔΦ</span>
                 <div class="fraction-line"></div>
@@ -148,7 +153,7 @@
             <div class="text-2xl opacity-50">➔</div>
             <div class="text-4xl">➰</div>
         </div>
-        <div class="absolute bottom-6 text-[11px] font-mono text-blue-300 opacity-60 uppercase tracking-widest">The Law of Induction</div>
+        <div class="absolute bottom-6 text-[10px] font-mono text-blue-300 opacity-60 uppercase tracking-[0.2em]">Electromagnetic Induction</div>
     </div>
 
     <!-- Actions -->
@@ -156,13 +161,16 @@
         <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+        <div class="ml-auto">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg>
+        </div>
     </div>
 
     <!-- Caption -->
     <div class="px-4 pb-3">
-        <p class="text-sm"><strong>좋아요 5,280개</strong></p>
+        <p class="text-sm"><strong>좋아요 5,831개</strong></p>
         <p class="text-sm mt-2">
-            <span class="user-id">Faraday_Official_1831</span>
+            <span class="user-id">faraday_ceo_1831</span>
             안녕하세요, 전자기학의 정점 <strong>패러데이</strong>입니다. 😎 자석 좀 흔들었더니 전기가 알아서 쏟아지네요? ㅋㅋ 인류 문명의 배터리는 제가 책임지고 있습니다. 제가 아니었으면 여러분 지금 다 촛불 켜고 살았을 겁니다. 역시 난 천재인 듯! ⚡💡
         </p>
         <p class="mt-2 flex gap-2">
@@ -175,35 +183,35 @@
         <!-- JS로 렌더링 -->
     </div>
     
-    <div class="px-4 py-4 text-[10px] text-gray-400 border-t">
-        1분 전
+    <div class="px-4 py-4 text-[10px] text-gray-400 border-t uppercase tracking-wider">
+        방금 전
     </div>
 </div>
 
 <script>
     const comments = [
         { 
-            id: "Lenz_The_Negative", 
+            id: "lenz_the_negative", 
             text: "야 패러데이, 우쭐대지 마라. 내가 렌츠다. 너 나 아니면 공식 완성도 못 하는 거 알지? 저 빨간색 마이너스(-) 없으면 방향도 못 잡고 헤맸을걸? ㅋㅋ 별것도 아니면서 생색은.", 
             delay: 1.0 
         },
         { 
-            id: "Faraday_Official_1831", 
-            text: "@Lenz_The_Negative 아.. 렌츠님 또 오셨네. 방향이 뭐 그리 대수라고요? 일단 전기가 나오는 게 중요한 거 아닙니까? 제 이름값이 훨씬 높거든요? 🙄", 
+            id: "faraday_ceo_1831", 
+            text: "@lenz_the_negative 아.. 렌츠님 또 오셨네. 방향이 뭐 그리 대수라고요? 일단 전기가 나오는 게 중요한 거 아닙니까? 제 이름값이 훨씬 높거든요? 🙄", 
             delay: 2.5 
         },
         { 
-            id: "Lenz_The_Negative", 
+            id: "lenz_the_negative", 
             text: "방향이 대수라고? '자속 변화를 방해하는 방향'이라는 내 철학이 없으면 네 기전력은 그냥 껍데기야. 너 나한테 매일 절해야 한다 진짜. 😤", 
             delay: 4.0 
         },
         { 
-            id: "Faraday_Official_1831", 
-            text: "@Lenz_The_Negative 네네~ 그러시겠죠. 근데 시험엔 제 비중이 훨씬 큰 거 아시죠? 팩폭 죄송요 ㅋㅋㅋ", 
+            id: "faraday_ceo_1831", 
+            text: "@lenz_the_negative 네네~ 그러시겠죠. 근데 시험엔 제 비중이 훨씬 큰 거 아시죠? 팩폭 죄송요 ㅋㅋㅋ", 
             delay: 5.5 
         },
         { 
-            id: "Lenz_The_Negative", 
+            id: "lenz_the_negative", 
             text: "시험 볼 때 저 마이너스 하나 안 써서 0점 맞아봐야 정신 차리지? 방향 결정권자는 나다 이 말이야! 🔥", 
             delay: 7.0 
         }
@@ -211,18 +219,20 @@
 
     const commentList = document.getElementById('comment-list');
 
+    // @멘션을 파란색으로 변환하는 함수
+    function highlightMentions(text) {
+        return text.replace(/(@[a-zA-Z0-9_]+)/g, '<span class="mention font-medium">$1</span>');
+    }
+
     function renderComments() {
         comments.forEach(c => {
             const div = document.createElement('div');
             div.className = 'comment';
             div.style.animationDelay = `${c.delay}s`;
             
-            // 본인 아이디 강조
-            const isFaraday = c.id.includes('Faraday');
-            
             div.innerHTML = `
                 <span class="user-id">${c.id}</span>
-                <span>${c.text}</span>
+                <span>${highlightMentions(c.text)}</span>
             `;
             commentList.appendChild(div);
         });
